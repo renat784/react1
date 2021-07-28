@@ -4,7 +4,7 @@ import { createStore } from "redux";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: 100 };
+    this.state = { value: 10 };
     this.store = createStore(this.counter);
     this.store.subscribe(() => this.setState({ value: this.store.getState() }));
   }
